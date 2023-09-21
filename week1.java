@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class ResearchLab {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.print("Enter your NIM (Student ID): ");
-        String nim = scanner.nextLine();
+        String nim = input.nextLine();
 
         System.out.print("Enter your birth year: ");
-        int birthYear = scanner.nextInt();
+        int birthYear = input.nextInt();
         int currentYear = 2023; 
 
         int age = currentYear - birthYear;
@@ -23,7 +23,7 @@ public class ResearchLab {
             System.out.println("5. Artificial Intelligence");
 
             System.out.print("Enter the number of the research program you are interested in (1-5): ");
-            int programChoice = scanner.nextInt();
+            int programChoice = input.nextInt();
 
             String programName = "";
 
@@ -39,7 +39,7 @@ public class ResearchLab {
                 programName = "Artificial Intelligence";
             } else {
                 System.out.println("Invalid program choice.");
-                scanner.close();
+                input.close();
                 return;
             }
 
