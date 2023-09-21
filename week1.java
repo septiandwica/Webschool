@@ -49,6 +49,6 @@ public class ResearchLab {
             System.out.println("You need to be 18 or above to work here.");
         }
 
-        scanner.close();
+        input.close();
     }
 }
